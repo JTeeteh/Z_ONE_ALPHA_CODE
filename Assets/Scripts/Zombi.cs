@@ -109,7 +109,7 @@ public class Zombi : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D collision)
     {
 
-        if (collision.gameObject.tag == "Bullet" || collision.gameObject.tag == "Melee")
+        if (collision.gameObject.tag == "Bullet")
         {
             HP -= 1.0f;
             DestroySelf(collision.gameObject);
