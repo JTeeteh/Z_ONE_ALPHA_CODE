@@ -21,7 +21,7 @@ public class Zombi : MonoBehaviour
     [SerializeField]
     float HP;
     bool lookother;
-    bool agro;
+    bool IsAgro;
     Rigidbody2D rb2d;
 
     public Animator animator;
@@ -29,6 +29,7 @@ public class Zombi : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Player = GameObject.Find("Player").transform;
         rb2d = GetComponent<Rigidbody2D>();
         spawner = GameObject.Find("Spawner");
 
@@ -41,13 +42,13 @@ public class Zombi : MonoBehaviour
         print(distoplayer);
         if (distoplayer < agrorange)
         {
-            agro = true;
+            IsAgro = true;
             chase();
         }
         else
         {
             patrol();
-            agro = false;
+            IsAgro = false;
             //stopchase();
         }
 
