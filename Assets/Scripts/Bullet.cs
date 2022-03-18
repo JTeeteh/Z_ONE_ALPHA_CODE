@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Transform firepoint;
+    public GameObject bulletPrefab;
 
-    // Update is called once per frame
+    // kumag 1
     void Update()
     {
-        
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Shoot();
+        }
+
+    }
+
+    void Shoot()
+    {
+        Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
     }
 }
