@@ -4,21 +4,24 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public Transform firepoint;
     public GameObject bulletPrefab;
+    public Transform shootSpawn;
 
-    // kumag 1
-    void Update()
+
+    // Start is called before the first frame update
+    void Start()
     {
-        if (Input.GetButtonDown("Fire1"))
-        {
-            Shoot();
-        }
 
     }
 
-    void Shoot()
+    // Update is called once per frame
+    void Update()
     {
-        Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
+        //check if the player presses the spacebar
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            //Debug.Log("spawn bullet in this part of the code");
+            Instantiate(bulletPrefab, shootSpawn.position, Quaternion.identity);
+        }
     }
 }

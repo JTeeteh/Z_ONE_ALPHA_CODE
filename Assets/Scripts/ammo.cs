@@ -5,20 +5,21 @@ using UnityEngine;
 public class ammo : MonoBehaviour
 {
 
-    public float speed = 20f;
-    public Rigidbody2D rb;
+    public float speed = 3.0f;
+    private Rigidbody2D _rigidbody;
     public float lifeTime = 3.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb.velocity = transform.right * speed;
+        _rigidbody = GetComponent<Rigidbody2D>();
+        _rigidbody.velocity = transform.right * speed;
         Destroy(this.gameObject, lifeTime);
     }
 
     void OnTriggerEnter2D (Collider2D hitInfo)
     {
-        hitInfo.GetComponent <Zombi>()
-        Destroy(Gameobjbect);
+        hitInfo.GetComponent<Zombi>();
+        Destroy(this.gameObject, lifeTime);
     }
 }
