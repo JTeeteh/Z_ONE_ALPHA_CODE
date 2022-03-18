@@ -94,7 +94,7 @@ public class Zombi : MonoBehaviour
 
     void patrol()
     {
-        if(lookother ==false )
+        if(lookother == false)
         {
         rb2d.velocity = new Vector2(speed / 4, 0);
 

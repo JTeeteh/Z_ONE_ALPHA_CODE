@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 8522562702612050378, guid: f88218f9b6233434abfe701ff65ccb57, type: 3}
-  agrorange: 5
+  agrorange: 2
   speed: 3
   kolength: 0
   koforce: 0
