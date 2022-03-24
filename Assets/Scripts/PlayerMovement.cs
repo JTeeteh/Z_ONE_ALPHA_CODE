@@ -15,7 +15,6 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
@@ -48,4 +47,10 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
         jump = false;
     }
-}
+
+    void OnCollisionEnter2d(Collision collision)
+    {
+        GameObject otherObj = collision.gameObject;
+        Debug.Log("Collided with: " + otherObj);
+    }
+    }

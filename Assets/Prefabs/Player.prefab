@@ -42,7 +42,6 @@ GameObject:
   - component: {fileID: 8522562702612050381}
   - component: {fileID: 8522562702612050380}
   - component: {fileID: 8522562702612050383}
-  - component: {fileID: 8522562702612050376}
   - component: {fileID: 8522562702612050379}
   - component: {fileID: 8522562702612050377}
   - component: {fileID: 8522562702612050374}
@@ -141,7 +140,7 @@ MonoBehaviour:
     m_Bits: 55
   m_GroundCheck: {fileID: 8522562702997414648}
   m_CeilingCheck: {fileID: 8522562702265662695}
-  m_CrouchDisableCollider: {fileID: 8522562702612050376}
+  m_CrouchDisableCollider: {fileID: 0}
   OnLandEvent:
     m_PersistentCalls:
       m_Calls:
@@ -193,32 +192,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!61 &8522562702612050376
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8522562702612050382}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: b2e8a748a69c1154296f7ddea84b31b2, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.009635799, y: -0.010154538}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.3}
-    newSize: {x: 0.2, y: 0.3}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.14202556, y: 0.2706986}
-  m_EdgeRadius: 0
 --- !u!61 &8522562702612050379
 BoxCollider2D:
   m_ObjectHideFlags: 0
