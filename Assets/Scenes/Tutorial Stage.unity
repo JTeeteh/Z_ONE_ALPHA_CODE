@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 42266412}
   - component: {fileID: 42266413}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: House-bathroom-Sheet_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 113022419}
   - component: {fileID: 113022420}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: House-living room-Sheet_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,7 +297,7 @@ GameObject:
   m_Component:
   - component: {fileID: 120926114}
   - component: {fileID: 120926115}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: House-bathroom-Sheet_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -638,7 +638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 533831487}
   - component: {fileID: 533831488}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: House-bathroom-Sheet_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -720,7 +720,7 @@ GameObject:
   m_Component:
   - component: {fileID: 551100225}
   - component: {fileID: 551100226}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: House-bedroom-Sheet_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -951,7 +951,7 @@ GameObject:
   m_Component:
   - component: {fileID: 587891247}
   - component: {fileID: 587891246}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Living Room_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1033,7 +1033,7 @@ GameObject:
   m_Component:
   - component: {fileID: 616166551}
   - component: {fileID: 616166550}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Living Room_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1115,7 +1115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 719589837}
   - component: {fileID: 719589836}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Living Room_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1197,7 +1197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 819681801}
   - component: {fileID: 819681802}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: House-kitchen-Sheet_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1314,7 +1314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 909345036}
   - component: {fileID: 909345035}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Living Room_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1396,7 +1396,7 @@ GameObject:
   m_Component:
   - component: {fileID: 938520376}
   - component: {fileID: 938520377}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: House-kitchen-Sheet_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1508,7 +1508,7 @@ GameObject:
   m_Component:
   - component: {fileID: 977644561}
   - component: {fileID: 977644560}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Living Room_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1590,7 +1590,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1019763634}
   - component: {fileID: 1019763635}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Living Room_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1672,7 +1672,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1142125123}
   - component: {fileID: 1142125124}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: House-bathroom-Sheet_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3105,7 +3105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1342281013}
   - component: {fileID: 1342281014}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Living Room_16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3192,7 +3192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1389085794}
   - component: {fileID: 1389085795}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: House-kitchen-Sheet_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4788,7 +4788,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556086760}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.407638, y: 0.34959975, z: -1}
+  m_LocalPosition: {x: -9.407638, y: 0.34959975, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 829289298}
@@ -4804,7 +4804,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1588838979}
   - component: {fileID: 1588838980}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: House-kitchen-Sheet_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5131,7 +5131,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687475590}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.59, y: 1.9, z: -1}
+  m_LocalPosition: {x: 0.59, y: 1.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 829289298}
@@ -5147,7 +5147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1825569376}
   - component: {fileID: 1825569377}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: House-bathroom-Sheet_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5405,7 +5405,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2081541879}
   - component: {fileID: 2081541880}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: House-bathroom-Sheet_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5487,7 +5487,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2117301118}
   - component: {fileID: 2117301119}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: House-kitchen-Sheet_16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
