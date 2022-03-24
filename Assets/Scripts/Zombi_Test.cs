@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Zombi : MonoBehaviour
+public class Zombi_Test : MonoBehaviour
 {
     [SerializeField]
     Transform Player;
@@ -51,26 +51,7 @@ public class Zombi : MonoBehaviour
             IsAgro = false;
             //stopchase();
         }
-        //Debug.Log("start contact with " + collision.gameObject.name);
-        //if we collide with a bullet, destroy self and the bullet gameobject
-        /*
-        //METHOD 1 checking for collision with bullet: Check if the gameobject has component attached to it
-        if(collision.gameObject.GetComponent<Bullet>() != null)
-        {
-            Debug.Log("collided with a bullet.");
-        }*/
-        //METHOD 2 checking for collision with bullet: Check the tag of the gameobject
-        if (gameObject.tag == "playerBullet")
-        {
-            //Debug.Log("collided with a bullet.");
-            HP -= 1.0f;
-            DestroySelf(gameObject);
-        }
-        if (HP <= 0)
-        {
-            Destroy(gameObject);
-            //ScoreUI.scoreValue += 100;
-        }
+
 
 
     }
@@ -80,27 +61,27 @@ public class Zombi : MonoBehaviour
 
         if (transform.position.x < Player.position.x)
         {
-         rb2d.velocity = new Vector2(speed, 0);
-         transform.localScale = new Vector2(1, 1);
+            rb2d.velocity = new Vector2(speed, 0);
+            transform.localScale = new Vector2(1, 1);
             lookother = false;
         }
         else if (transform.position.x > Player.position.x)
         {
-         rb2d.velocity = new Vector2(-speed, 0);
-         transform.localScale = new Vector2(-1, 1);
+            rb2d.velocity = new Vector2(-speed, 0);
+            transform.localScale = new Vector2(-1, 1);
             lookother = true;
         }
     }
 
     void patrol()
     {
-        if(lookother == false)
+        if (lookother == false)
         {
-        rb2d.velocity = new Vector2(speed / 4, 0);
+            rb2d.velocity = new Vector2(speed / 4, 0);
 
         }
         else
-        rb2d.velocity = new Vector2(-speed / 4, 0);
+            rb2d.velocity = new Vector2(-speed / 4, 0);
 
     }
 
@@ -123,17 +104,17 @@ public class Zombi : MonoBehaviour
     }
 
 
-    
+
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("start contact with " + collision.gameObject.name);
-        if (collision.gameObject.tag == "playerBullet")
+
+        if (collision.gameObject.tag == "Bullet")
         {
             HP -= 1.0f;
             DestroySelf(collision.gameObject);
             rb2d.velocity = new Vector2(kolength, koforce);
-            
+
 
         }
         if (HP <= 0)
@@ -144,14 +125,13 @@ public class Zombi : MonoBehaviour
         }
 
 
-
     }
-    
+
     private void DestroySelf(GameObject collidedObject)
     {
         Destroy(collidedObject);
     }
-    
+
 
 
 }
