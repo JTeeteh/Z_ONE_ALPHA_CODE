@@ -369,11 +369,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &142786665 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8522562702612050378, guid: f88218f9b6233434abfe701ff65ccb57, type: 3}
-  m_PrefabInstance: {fileID: 1365846354}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &231890128
 GameObject:
   m_ObjectHideFlags: 3
@@ -930,7 +925,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 142786665}
+  m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 5
@@ -1473,6 +1468,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &954237008 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7047132668392136393, guid: f88218f9b6233434abfe701ff65ccb57, type: 3}
+  m_PrefabInstance: {fileID: 1365846354}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &977644559
 GameObject:
   m_ObjectHideFlags: 0
@@ -3124,9 +3124,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6644242295387397313, guid: f88218f9b6233434abfe701ff65ccb57, type: 3}
+      propertyPath: FirePoint
+      value: 
+      objectReference: {fileID: 954237008}
+    - target: {fileID: 7047132668392136393, guid: f88218f9b6233434abfe701ff65ccb57, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8522562702612050378, guid: f88218f9b6233434abfe701ff65ccb57, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8522562702612050378, guid: f88218f9b6233434abfe701ff65ccb57, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3167,6 +3175,14 @@ PrefabInstance:
     - target: {fileID: 8522562702612050378, guid: f88218f9b6233434abfe701ff65ccb57, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8522562702612050380, guid: f88218f9b6233434abfe701ff65ccb57, type: 3}
+      propertyPath: m_CrouchSpeed
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8522562702612050380, guid: f88218f9b6233434abfe701ff65ccb57, type: 3}
+      propertyPath: m_MovementSmoothing
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8522562702612050380, guid: f88218f9b6233434abfe701ff65ccb57, type: 3}
       propertyPath: m_WhatIsGround.m_Bits
@@ -5292,7 +5308,7 @@ Transform:
   - {fileID: 1495224090}
   - {fileID: 1165630057}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2081541878
 GameObject:
