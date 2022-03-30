@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -53,4 +54,11 @@ public class PlayerMovement : MonoBehaviour
         GameObject otherObj = collision.gameObject;
         Debug.Log("Collided with: " + otherObj);
     }
+    void onTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "NextLevel")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
+}
