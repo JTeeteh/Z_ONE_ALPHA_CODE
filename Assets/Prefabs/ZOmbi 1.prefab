@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 915396062122877027}
   - component: {fileID: 915396062122877026}
   - component: {fileID: 915396062122877025}
+  - component: {fileID: 2980084601976528538}
   m_Layer: 0
   m_Name: ZOmbi 1
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 915396062122877024}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -38.26, y: -4.01, z: 0}
+  m_LocalPosition: {x: -38.249, y: -3.957, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -118,7 +119,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.14459229, y: 0.66895986}
+  m_Offset: {x: -0.16812325, y: 0.82401764}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -129,7 +130,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.4491806, y: 1.3379197}
+  m_Size: {x: 0.49624252, y: 1.1721761}
   m_EdgeRadius: 0
 --- !u!50 &915396062122877025
 Rigidbody2D:
@@ -152,3 +153,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!58 &2980084601976528538
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915396062122877024}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.16430855, y: 0.23423946}
+  serializedVersion: 2
+  m_Radius: 0.24505806
