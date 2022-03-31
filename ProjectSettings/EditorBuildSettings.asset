@@ -7,13 +7,13 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: 
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/FINAL SCENES/MainMenu_StartUp.unity
     guid: a6e9425ab9e9d5247845be190643735e
   - enabled: 1
-    path: Assets/Scenes/FINAL SCENES/Tutorial_Test_Scene.unity
-    guid: 9f575f3c775d675488381447e6371b8b
+    path: Assets/Scenes/FINAL SCENES/Tutorial Stage.unity
+    guid: b9f51dd2be8cd2a4c87d1d1c59fa0617
   - enabled: 1
     path: Assets/Scenes/FINAL SCENES/Stage 1.unity
     guid: f9ca295ae1dfd0f47b945eb2eb27e3f5
