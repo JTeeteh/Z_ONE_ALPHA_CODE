@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthController : MonoBehaviour
 {
@@ -26,9 +27,9 @@ public class HealthController : MonoBehaviour
     {
         life -= d;
         Destroy(hearts[life].gameObject);
-        if(life < 1)
+        if(life == 0)
         {
-            dead = true;
+            SceneManager.LoadScene("MainMenu_StartUp");
         }
     }
 }

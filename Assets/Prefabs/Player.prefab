@@ -296,9 +296,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 8522562702612050380}
   healthController: {fileID: 0}
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 8522562702612050379}
   animator: {fileID: 8522562702612050374}
   runSpeed: 40
+  crouch: 0
 --- !u!95 &8522562702612050374
 Animator:
   serializedVersion: 3
@@ -346,7 +347,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c2e36fef26c6cb4ca8b9924fea7946a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FirePoint: {fileID: 3517782520993436022}
+  firePoint: {fileID: 3517782520993436022}
+  firePointCrouch: {fileID: 2237752980684633972}
+  playerMovement: {fileID: 8522562702612050377}
   bulletPrefab: {fileID: 4583679432814311947, guid: d0ba6596de043144aa5ef7c8a80d863a, type: 3}
 --- !u!1 &8522562702997414651
 GameObject:
