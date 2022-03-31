@@ -128,7 +128,7 @@ public class Zombi : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("start contact with " + collision.gameObject.name);
-        if (collision.gameObject.tag == "playerBullet")
+        if (collision.gameObject.tag == "Bullet")
         {
             HP -= 1.0f;
             DestroySelf(collision.gameObject);
