@@ -106,6 +106,7 @@ MonoBehaviour:
   HP: 3
   animator: {fileID: 0}
   spawner: {fileID: 0}
+  blood: {fileID: 2371438270964442315, guid: a816049583e56b444ba5c141ad3dc205, type: 3}
 --- !u!61 &915396062122877026
 BoxCollider2D:
   m_ObjectHideFlags: 0

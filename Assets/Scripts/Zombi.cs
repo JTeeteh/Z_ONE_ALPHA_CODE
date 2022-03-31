@@ -26,6 +26,7 @@ public class Zombi : MonoBehaviour
 
     public Animator animator;
     public GameObject spawner;
+    public GameObject blood;
     // Start is called before the first frame update
     void Start()
     {
@@ -130,6 +131,7 @@ public class Zombi : MonoBehaviour
         Debug.Log("start contact with " + collision.gameObject.name);
         if (collision.gameObject.tag == "Bullet")
         {
+            Instantiate(blood, transform.position, Quaternion.identity);
             HP -= 1.0f;
             Destroyobj(collision.gameObject);
             rb2d.velocity = new Vector2(kolength, koforce);
