@@ -40,7 +40,7 @@ public class Zombi : MonoBehaviour
     void Update()
     {
         float distoplayer = Vector2.Distance(transform.position, Player.position);
-        print(distoplayer);
+        //print(distoplayer);
         if (distoplayer < agrorange)
         {
             IsAgro = true;
@@ -144,9 +144,6 @@ public class Zombi : MonoBehaviour
             Destroy(gameObject);
             //ScoreUI.scoreValue += 10;
         }
-
-
-
     }
     
     private void Destroyobj(GameObject collidedObject)

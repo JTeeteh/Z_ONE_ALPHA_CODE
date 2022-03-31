@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    public Transform FirePoint;
+    public Transform firePoint, firePointCrouch;
+    public PlayerMovement playerMovement;
     public GameObject bulletPrefab;
     // Start is called before the first frame update
     void Start()
@@ -17,13 +18,16 @@ public class Weapon : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            Shoot();
+            Shoot(playerMovement.crouch);
         }
     }
 
-    void Shoot()
+    void Shoot(bool isCrouching)
     {
-        Instantiate(bulletPrefab, FirePoint.position, FirePoint.rotation);
+        if(!isCrouching)
+            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        else
+            Instantiate(bulletPrefab, firePointCrouch.position, firePointCrouch.rotation);
         //shooting logic
     }
 }

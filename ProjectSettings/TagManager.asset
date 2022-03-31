@@ -7,6 +7,7 @@ TagManager:
   - NextLevel
   - PrevLevel
   - Bullet
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -43,4 +44,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1446696953
+    locked: 0
+  - name: Foreground
+    uniqueID: 3612976519
+    locked: 0
+  - name: Player
+    uniqueID: 4248161627
+    locked: 0
+  - name: Ground
+    uniqueID: 849324329
     locked: 0
