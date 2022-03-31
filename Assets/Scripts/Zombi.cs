@@ -64,7 +64,7 @@ public class Zombi : MonoBehaviour
         {
             //Debug.Log("collided with a bullet.");
             HP -= 1.0f;
-            DestroySelf(gameObject);
+            Destroyobj(gameObject);
         }
         if (HP <= 0)
         {
@@ -131,7 +131,7 @@ public class Zombi : MonoBehaviour
         if (collision.gameObject.tag == "Bullet")
         {
             HP -= 1.0f;
-            DestroySelf(collision.gameObject);
+            Destroyobj(collision.gameObject);
             rb2d.velocity = new Vector2(kolength, koforce);
             
 
@@ -147,7 +147,7 @@ public class Zombi : MonoBehaviour
 
     }
     
-    private void DestroySelf(GameObject collidedObject)
+    private void Destroyobj(GameObject collidedObject)
     {
         Destroy(collidedObject);
     }

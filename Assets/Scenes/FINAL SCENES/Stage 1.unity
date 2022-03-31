@@ -2381,6 +2381,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ZOmbi 1
       objectReference: {fileID: 0}
+    - target: {fileID: 915396062122877025, guid: 7ea598aa6c602734e8b4f9cd01a1d413, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 915396062122877026, guid: 7ea598aa6c602734e8b4f9cd01a1d413, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 915396062122877029, guid: 7ea598aa6c602734e8b4f9cd01a1d413, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2423,6 +2431,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 915396062122877029, guid: 7ea598aa6c602734e8b4f9cd01a1d413, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2980084601976528538, guid: 7ea598aa6c602734e8b4f9cd01a1d413, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
