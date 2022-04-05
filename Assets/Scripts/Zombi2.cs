@@ -92,6 +92,7 @@ public class Zombi2 : MonoBehaviour
             transform.localScale = new Vector2(-1, 1);
             lookother = false;
         }
+        animator.SetBool("isAgro", true);
     }
 
     void patrol()
@@ -102,15 +103,15 @@ public class Zombi2 : MonoBehaviour
 
 
         }
-        else
+        else { }
             rb2d.velocity = new Vector2(-speed / 4, 0);
-
+        animator.SetBool("isAgro", false);
     }
 
-    public void OnAgro()
+    /*public void OnAgro()
     {
         //animator.SetBool("IsAgro", IsAgro);
-    }
+    }*/
 
     /*
     private void flip()

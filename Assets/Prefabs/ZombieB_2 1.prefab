@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9133099686520512983}
   - component: {fileID: 9133099686520512980}
   - component: {fileID: 9133099686520512981}
+  - component: {fileID: 4858249198846418873}
   m_Layer: 0
   m_Name: ZombieB_2 1
   m_TagString: Untagged
@@ -104,7 +105,7 @@ MonoBehaviour:
   kolength: 0
   koforce: 0
   HP: 6
-  animator: {fileID: 0}
+  animator: {fileID: 4858249198846418873}
   spawner: {fileID: 0}
   blood: {fileID: 2371438270964442315, guid: a816049583e56b444ba5c141ad3dc205, type: 3}
 --- !u!50 &9133099686520512983
@@ -160,3 +161,22 @@ CapsuleCollider2D:
   m_Offset: {x: 0.04295969, y: 0.733932}
   m_Size: {x: 0.42039108, y: 1.4139972}
   m_Direction: 0
+--- !u!95 &4858249198846418873
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9133099686520512978}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9d8bc203cfb24be4ebd119b031a886ad, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

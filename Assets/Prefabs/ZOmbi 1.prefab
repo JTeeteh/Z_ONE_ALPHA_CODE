@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 915396062122877025}
   - component: {fileID: 2980084601976528538}
   - component: {fileID: 5208112374820847273}
+  - component: {fileID: 3522983428226217860}
   m_Layer: 0
   m_Name: ZOmbi 1
   m_TagString: Enemy
@@ -105,7 +106,7 @@ MonoBehaviour:
   kolength: 0
   koforce: 0
   HP: 3
-  animator: {fileID: 0}
+  animator: {fileID: 3522983428226217860}
   spawner: {fileID: 0}
   blood: {fileID: 2371438270964442315, guid: a816049583e56b444ba5c141ad3dc205, type: 3}
 --- !u!50 &915396062122877025
@@ -161,6 +162,25 @@ CapsuleCollider2D:
   m_Offset: {x: -0.08394432, y: 0}
   m_Size: {x: 0.5396309, y: 1.4545455}
   m_Direction: 0
+--- !u!95 &3522983428226217860
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915396062122877024}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8aa3de9f0692cfe4eb0327c4311bb761, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5752235167884065760
 GameObject:
   m_ObjectHideFlags: 0
