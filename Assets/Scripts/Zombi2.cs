@@ -103,7 +103,7 @@ public class Zombi2 : MonoBehaviour
 
 
         }
-        else { }
+        else
             rb2d.velocity = new Vector2(-speed / 4, 0);
         animator.SetBool("isAgro", false);
     }
