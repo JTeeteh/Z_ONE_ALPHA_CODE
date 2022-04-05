@@ -7,6 +7,9 @@ public class Weapon : MonoBehaviour
     public Transform firePoint, firePointCrouch;
     public PlayerMovement playerMovement;
     public GameObject bulletPrefab;
+
+    private float nextTimeOfFire = 0f;
+    public float fireRate = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +22,7 @@ public class Weapon : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             Shoot(playerMovement.crouch);
+            nextTimeOfFire = Time.time + 1;
         }
     }
 

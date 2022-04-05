@@ -20,7 +20,7 @@ public class thePit : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("MainMenu_StartUp");
+            SceneManager.LoadScene("GameOver");
         }
 
     }

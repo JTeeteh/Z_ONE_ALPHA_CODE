@@ -40,7 +40,6 @@ public class PlayerMovement : MonoBehaviour
             crouch = false;
         }
 
-        Debug.Log("Life: " + life);
     }
 
     public void OnLanding()
