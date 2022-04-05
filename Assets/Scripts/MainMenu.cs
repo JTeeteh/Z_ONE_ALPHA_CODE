@@ -16,4 +16,25 @@ public class MainMenu : MonoBehaviour
         Debug.Log("QUIT!");
         Application.Quit();
     }
+
+    public void Settings()
+    {
+        SceneManager.LoadScene("Options");
+    }
+    public void Retrun()
+    {
+        SceneManager.LoadScene("MainMenu_StartUp");
+    }
+    public void VashuKek()
+    {
+        SceneManager.LoadScene("VashScare");
+    }
+    public void YouFool()
+    {
+        SceneManager.LoadScene("GameOver");
+    }
+    public void ReTry()
+    {
+        SceneManager.LoadScene("Stage 1");
+    }
 }
