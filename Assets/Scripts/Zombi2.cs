@@ -131,7 +131,7 @@ public class Zombi2 : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("start contact with " + collision.gameObject.name);
+        //Debug.Log("start contact with " + collision.gameObject.name);
         if (collision.gameObject.tag == "Bullet")
         {
             Instantiate(blood, transform.position, Quaternion.identity);
