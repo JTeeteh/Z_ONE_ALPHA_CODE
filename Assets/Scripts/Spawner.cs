@@ -22,25 +22,22 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            spawnz();
+        spawnz();
     }
 
     public void spawnz()
     {
         if (enemyList.Count < spawnlimit)
-        { 
-        
+        {
+
             currentTime += Time.deltaTime;
             if (currentTime > spawndelay)
             {
-            spawndelay += currentTime;
-            enemyList.Add(Instantiate(enemyprefab, spawnloc.position, Quaternion.identity));
-            spawndelay -= currentTime;
-            currentTime = 0.0f;
+                spawndelay += currentTime;
+                enemyList.Add(Instantiate(enemyprefab, spawnloc.position, Quaternion.identity));
+                spawndelay -= currentTime;
+                currentTime = 0.0f;
             }
         }
     }
 }
-
-
-

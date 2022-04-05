@@ -142,7 +142,6 @@ public class Zombi : MonoBehaviour
         }
         if (HP <= 0)
         {
-            spawner.GetComponent<Spawner>().enemyList.Remove(gameObject);
             Destroy(gameObject);
             //ScoreUI.scoreValue += 10;
         }
