@@ -1332,7 +1332,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 243817189}
+  firePointCrouch: {fileID: 0}
+  playerMovement: {fileID: 0}
   bulletPrefab: {fileID: 7365658134962950655, guid: ff421307532414f49863cba250c0cf95, type: 3}
+  fireRate: 1
 --- !u!1 &657442572 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 672384737585471029, guid: 3187ec156cbd4a5458af2b05792f569d, type: 3}
