@@ -66,13 +66,15 @@ public class Zombi : MonoBehaviour
             //Debug.Log("collided with a bullet.");
             HP -= 1.0f;
             Destroyobj(gameObject);
+            
         }
+        
         if (HP <= 0)
-        {
+        { 
             Destroy(gameObject);
-            //ScoreUI.scoreValue += 100;
+            
         }
-
+        
 
     }
 
@@ -143,7 +145,7 @@ public class Zombi : MonoBehaviour
         if (HP <= 0)
         {
             Destroy(gameObject);
-            //ScoreUI.scoreValue += 10;
+            ScoreScript.scoreValue += 1;
         }
     }
     

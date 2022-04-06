@@ -71,7 +71,7 @@ public class Zombi2 : MonoBehaviour
         if (HP <= 0)
         {
             Destroy(gameObject);
-            //ScoreUI.scoreValue += 100;
+            ScoreScript.scoreValue += 1;
         }
 
 
