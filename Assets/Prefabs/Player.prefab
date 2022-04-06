@@ -266,7 +266,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: b2e8a748a69c1154296f7ddea84b31b2, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.02076251, y: 0.033773795}
@@ -349,9 +349,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 3517782520993436022}
   firePointCrouch: {fileID: 2237752980684633972}
-  currentWeapon: {fileID: 0}
   playerMovement: {fileID: 8522562702612050377}
-  bulletPrefab: {fileID: 4583679432814311947, guid: d0ba6596de043144aa5ef7c8a80d863a, type: 3}
+  bullet:
+  - {fileID: 4583679432814311947, guid: d0ba6596de043144aa5ef7c8a80d863a, type: 3}
+  - {fileID: 8660840700571294153, guid: 7668e9c62bd15314289870c6d3bd9f13, type: 3}
+  - {fileID: 3867791679113027600, guid: 713f703d627b200468b18fb4576800f7, type: 3}
+  gun:
+  - {fileID: 8316636991870721272, guid: 0e0cdd0e912a89548a649a7df40ba5b1, type: 3}
+  - {fileID: 6988593086818538156, guid: d33178372ec57c146b41684b1d13f260, type: 3}
+  - {fileID: 145122567439427956, guid: fb3cfca82f6507a4a9314522100db0fa, type: 3}
+  fireRate: 1
 --- !u!1 &8522562702997414651
 GameObject:
   m_ObjectHideFlags: 0

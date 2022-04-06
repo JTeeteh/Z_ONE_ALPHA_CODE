@@ -8,6 +8,8 @@ TagManager:
   - PrevLevel
   - Bullet
   - Enemy
+  - Weapon
+  - wall
   layers:
   - Default
   - TransparentFX
