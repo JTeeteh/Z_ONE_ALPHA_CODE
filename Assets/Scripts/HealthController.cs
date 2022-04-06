@@ -29,7 +29,7 @@ public class HealthController : MonoBehaviour
         Destroy(hearts[life].gameObject);
         if(life == 0)
         {
-            SceneManager.LoadScene("MainMenu_StartUp");
+            SceneManager.LoadScene("EndGame");
         }
     }
 }

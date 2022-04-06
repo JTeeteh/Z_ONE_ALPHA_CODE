@@ -349,6 +349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 3517782520993436022}
   firePointCrouch: {fileID: 2237752980684633972}
+  currentWeapon: {fileID: 0}
   playerMovement: {fileID: 8522562702612050377}
   bulletPrefab: {fileID: 4583679432814311947, guid: d0ba6596de043144aa5ef7c8a80d863a, type: 3}
 --- !u!1 &8522562702997414651
