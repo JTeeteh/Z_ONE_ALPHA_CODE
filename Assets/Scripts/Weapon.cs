@@ -17,7 +17,8 @@ public class Weapon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        fireRate = 10f;
+        //higher the number slower the fire rate.
+        fireRate =  100f;
         bulletPrefab = bullet[0];
         canFire = true;
         timerStarted = false;
@@ -57,15 +58,25 @@ public class Weapon : MonoBehaviour
             if (target.name == gun[1].name)
             {
                 bulletPrefab = bullet[1];
-                fireRate = 20;
+                fireRate = 50f;
             }
             else if (target.name == gun[2].name)
             {
                 bulletPrefab = bullet[2];
-                fireRate = 20;
-            } 
+                fireRate = 400f;
+            }
+            else if (target.name == gun[3].name)
+            {
+                bulletPrefab = bullet[3];
+                fireRate = 350f;
+            }
+            else if (target.name == gun[4].name)
+            {
+                bulletPrefab = bullet[4];
+                fireRate = 10f;
+            }
 
-            Debug.Log("gun pick up - upgrade to rifle bullet.");
+            Debug.Log("gun pick up - upgrade.");
             Destroy(target.gameObject);
         }
     }
