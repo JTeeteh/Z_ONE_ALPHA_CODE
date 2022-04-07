@@ -18,7 +18,7 @@ public class Weapon : MonoBehaviour
     void Start()
     {
         //higher the number slower the fire rate.
-        fireRate =  10f;
+        fireRate =  100f;
         bulletPrefab = bullet[0];
         canFire = true;
         timerStarted = false;
@@ -55,30 +55,25 @@ public class Weapon : MonoBehaviour
     {
         if (target.tag == "Weapon")
         {
-            if (target.name == gun[0].name)
-            {
-                bulletPrefab = bullet[0];
-                fireRate = 10f;
-            }
-            else if (target.name == gun[1].name)
+            if (target.name == gun[1].name)
             {
                 bulletPrefab = bullet[1];
-                fireRate = 5f;
+                fireRate = 50f;
             }
             else if (target.name == gun[2].name)
             {
                 bulletPrefab = bullet[2];
-                fireRate = 25f;
+                fireRate = 400f;
             }
             else if (target.name == gun[3].name)
             {
                 bulletPrefab = bullet[3];
-                fireRate = 20f;
+                fireRate = 350f;
             }
             else if (target.name == gun[4].name)
             {
                 bulletPrefab = bullet[4];
-                fireRate = 0.5f;
+                fireRate = 10f;
             }
 
             Debug.Log("gun pick up - upgrade.");
