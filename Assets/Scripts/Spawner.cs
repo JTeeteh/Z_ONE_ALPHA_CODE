@@ -40,4 +40,12 @@ public class Spawner : MonoBehaviour
             }
         }
     }
+
+    public void spawnDestroy()
+    {
+        if(spawnlimit == spawnlimit)
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }
